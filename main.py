@@ -17,7 +17,7 @@ class SoundWindow(arcade.Window):
         arcade.draw_texture_rectangle(WIDTH/2,HEIGHT/2,
                                       WIDTH,HEIGHT,self.background)
     def on_mouse_press(self, x: int, y: int, button: int, modifiers: int):
-        if 150<y<211 and 45<x<108:
+        if 1<y<2 and 4<x<1:
             if self.flag==False:
                 print("play")
                 self.sound_player=arcade.play_sound(self.sound,0.1,looping=True)
